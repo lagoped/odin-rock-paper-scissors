@@ -1,10 +1,11 @@
 const rock = "Rock"
 const paper = "Paper"
 const scissors = "Scissors"
-const rounds = 5
+const pointsToWin = 5
 
 let playerScore = 0
 let computerScore = 0
+let round = 0
 
 
 function getComputerChoice() {
@@ -112,7 +113,8 @@ function roundOutcomeAgainstScissors(playerChoice) {
 
 function playGame() {
 
-    for (let i = 0; i < rounds; i++) {
+    for (let i = 0; i < pointsToWin
+    ; i++) {
         playRound();
     }
 
@@ -126,5 +128,34 @@ function playGame() {
         alert("It's a draw")
     }
 }
+
+//NEW METHODS
+function updateHeader(){
+    document.getElementById("player-score").textContent = "Player Score : " + playerScore;
+    document.getElementById("computer-score").textContent = "Computer Score : " + computerScore;
+
+    round++; //TODO place in refactor game code instead of here
+    document.getElementById("current-round").textContent = "Current round : " + round;
+}
+
+function disableChoiceButton() {
+
+}
+
+function enableChoiceButton() {
+    
+}
+
+function resetGame(){
+    playerScore = 0;
+    computerScore = 0;
+    round = 0;
+
+    updateHeader();
+}
+
+
+//TODO start round button, others buttons disabled until it is clicked
+//TODO restart, reset all to 0 (wait until win or lost?)
 
 // playGame();

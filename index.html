@@ -12,14 +12,14 @@
     <div class="header">
         <div>
             <div>Points to win : 5</div>
-            <div>Current round : X</div>
+            <div id="current-round">Current round : 0</div>
         </div>
         <div>
             <div id="player-score">
-                Player Score
+                Player Score : 0
             </div>
             <div id="computer-score">
-                Computer Score
+                Computer Score : 0
             </div>
         </div>
     </div>
@@ -37,6 +37,8 @@
             <button id="scissors-button" class="game-option-button">Scissors</button>
         </div>
     </div>
+
+    <button onclick="updateHeader()">TEST</button>
 </body>
 
 
