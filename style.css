@@ -1,0 +1,37 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 40px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.game-option {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-option-img {
+    background-color: burlywood;
+    align-self: center;
+    width: 160px;
+    height: 160px;
+}
+
+.game-option-button {
+    margin : 5px;
+}
