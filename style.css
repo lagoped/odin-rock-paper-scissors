@@ -11,6 +11,18 @@ body {
     margin: 40px;
 }
 
+.status-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        padding: 30px;
+        border-style: dotted;
+        border-color:darkolivegreen;
+    }
+}
+
 .game {
     display: flex;
     justify-content: space-around;
@@ -34,4 +46,16 @@ body {
 
 .game-option-button {
     margin : 5px;
+}
+
+.footer {
+    align-self: center;
+
+    button {
+        margin: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

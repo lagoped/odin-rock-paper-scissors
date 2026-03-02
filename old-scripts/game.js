@@ -22,6 +22,7 @@ function getComputerChoice() {
 }
 
 
+//TODO ici sera en fonction du bouton
 function getPlayerChoice() {
     let choice = prompt("(R)ock, (P)apper, (S)cissors ?");
 
@@ -113,8 +114,7 @@ function roundOutcomeAgainstScissors(playerChoice) {
 
 function playGame() {
 
-    for (let i = 0; i < pointsToWin
-    ; i++) {
+    for (let i = 0; i < pointsToWin; i++) {
         playRound();
     }
 
@@ -130,7 +130,7 @@ function playGame() {
 }
 
 //NEW METHODS
-function updateHeader(){
+function updateHeader() {
     document.getElementById("player-score").textContent = "Player Score : " + playerScore;
     document.getElementById("computer-score").textContent = "Computer Score : " + computerScore;
 
@@ -143,16 +143,31 @@ function disableChoiceButton() {
 }
 
 function enableChoiceButton() {
-    
+
 }
 
-function resetGame(){
+function resetGame() {
     playerScore = 0;
     computerScore = 0;
     round = 0;
 
     updateHeader();
 }
+
+
+function playerSelectRock(){
+    return rock
+}
+
+function playerSelectPaper(){
+    return paper
+}
+
+function playerSelectScissors(){
+    return scissors
+}
+
+
 
 
 //TODO start round button, others buttons disabled until it is clicked

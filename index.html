@@ -23,28 +23,30 @@
             </div>
         </div>
     </div>
+    <div class="status-message">
+        <h3 id="round-message">
+            Make a choice
+        </h3>
+    </div>
     <div class="game">
         <div id="rock" class="game-option">
             <img src="img/rock.png" alt="Rock" class="game-option-img">
-            <button id="rock-button" class="game-option-button">Rock</button>
+            <button id="rock-button" class="game-option-button" onclick="playerSelectRock()">Rock</button>
         </div>
         <div id="paper" class="game-option">
             <img src="img/paper.png" alt="Paper" class="game-option-img">
-            <button id="paper-button" class="game-option-button">Paper</button>
+            <button id="paper-button" class="game-option-button" onclick="playerSelectPaper()">Paper</button>
         </div>
         <div id="scissors" class="game-option">
             <img src="img/scissors.png" alt="Scissors" class="game-option-img">
-            <button id="scissors-button" class="game-option-button">Scissors</button>
+            <button id="scissors-button" class="game-option-button" onclick="playerSelectScissors()">Scissors</button>
         </div>
     </div>
-
-    <button onclick="updateHeader()">TEST</button>
+    <div class="footer">
+        <button onclick="resetGame()">RESET</button>
+    </div>
 </body>
 
-
-<script src="game.js"></script>
-<script>
-    console.log("test");
-</script>
+<script src="updated-game.js"></script>
 
 </html>
