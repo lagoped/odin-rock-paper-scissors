@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Exercise</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <div>
+            <div>Points to win : 5</div>
+            <div id="current-round">Current round : 0</div>
+        </div>
+        <div>
+            <div id="player-score">
+                Player Score : 0
+            </div>
+            <div id="computer-score">
+                Computer Score : 0
+            </div>
+        </div>
+    </div>
+    <div class="status-message">
+        <h3 id="round-message">
+            Make a choice
+        </h3>
+    </div>
+    <div class="game">
+        <div id="rock" class="game-option">
+            <img src="img/rock.png" alt="Rock" class="game-option-img">
+            <button id="rock-button" class="game-option-button" onclick="playerSelectRock()">Rock</button>
+        </div>
+        <div id="paper" class="game-option">
+            <img src="img/paper.png" alt="Paper" class="game-option-img">
+            <button id="paper-button" class="game-option-button" onclick="playerSelectPaper()">Paper</button>
+        </div>
+        <div id="scissors" class="game-option">
+            <img src="img/scissors.png" alt="Scissors" class="game-option-img">
+            <button id="scissors-button" class="game-option-button" onclick="playerSelectScissors()">Scissors</button>
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="resetGame()">RESET</button>
+    </div>
 </body>
 
+<script src="updated-game.js"></script>
 
-<script src="game.js"></script>
-<script>
-    console.log("test");
-</script>
 </html>
